@@ -17,7 +17,7 @@ import os
 
 PROJECT_ID = os.getenv("PROJECT_ID", "ENTER_YOUR_PROJECT_ID") 
 REGION = os.getenv("REGION", "us-central1")
-GCS_LOCATION = os.getenv("GCS_LOCATION", "ENTER_YOUR_BUCKET_URL") # https://your_bucket_id
+GCS_LOCATION = os.getenv("GCS_LOCATION", "ENTER_YOUR_BUCKET_URL") # gs://tg-vertex-mlops-bucket
 
 ARTIFACT_STORE_URI = os.path.join(GCS_LOCATION, "tfx_artifacts")
 MODEL_REGISTRY_URI = os.getenv(
