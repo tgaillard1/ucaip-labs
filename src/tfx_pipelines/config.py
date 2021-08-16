@@ -15,9 +15,9 @@
 
 import os
 
-PROJECT_ID = os.getenv("PROJECT_ID", "ksalama-cloudml")
+PROJECT_ID = os.getenv("PROJECT_ID", "ENTER_YOUR_PROJECT_ID") 
 REGION = os.getenv("REGION", "us-central1")
-GCS_LOCATION = os.getenv("GCS_LOCATION", "gs://ksalama-cloudml-us/chicago-taxi-tips")
+GCS_LOCATION = os.getenv("GCS_LOCATION", "ENTER_YOUR_BUCKET_URL") # https://your_bucket_id
 
 ARTIFACT_STORE_URI = os.path.join(GCS_LOCATION, "tfx_artifacts")
 MODEL_REGISTRY_URI = os.getenv(
