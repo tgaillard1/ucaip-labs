@@ -36,9 +36,11 @@ You can customize your configuration using the following variables:
 
 To provision the environment:
 
-1. Open [Cloud Shell](https://cloud.google.com/shell/docs/launching-cloud-shell)
+1. Open GCP console and create a new project that you have project ownership rights to.  Note the project_id from the new project, this will be used throughout the workshops.
 
-2. Download the installation scripts
+2. Open [Cloud Shell](https://cloud.google.com/shell/docs/launching-cloud-shell)
+
+3. Download the installation scripts
     ```
     SRC_REPO=https://github.com/tgaillard1/ucaip-labs
     LOCAL_DIR=provision
@@ -46,9 +48,9 @@ To provision the environment:
     cd $LOCAL_DIR/terraform
     ```
 
-3. Update the `terraform.tfvars` file with the values reflecting your environment. Alternatively, you can provide the values using the Terraform CLI `-var` options when you execute `terraform apply` in the next step
+4. Update the `terraform.tfvars` file with the values reflecting your environment. **NOTE:  You must change the project_id variable to the project you created in step 1.  Also leave the location as central to simplify deployments.  If running more than once you will also need to change the name_prefix variable to be unique.**  Alternatively, you can provide the values using the Terraform CLI `-var` options when you execute `terraform apply` in the next step
 
-4. Execute the following commands. :
+5. Execute the following commands. :
     ```
     terraform init
     terraform apply
