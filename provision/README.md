@@ -40,7 +40,7 @@ To provision the environment:
 
 2. Download the installation scripts
     ```
-    SRC_REPO=https://github.com/tgaillard1/ucaip-labs.git
+    SRC_REPO=https://github.com/tgaillard1/ucaip-labs
     LOCAL_DIR=provision
     kpt pkg get $SRC_REPO/provision@main $LOCAL_DIR
     cd $LOCAL_DIR/terraform
